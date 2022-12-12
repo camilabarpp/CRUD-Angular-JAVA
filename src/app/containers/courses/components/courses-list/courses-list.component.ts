@@ -5,19 +5,15 @@ import { catchError, Observable, of } from 'rxjs';
 import { ErrorDialogComponent } from 'src/app/shared/error-dialog/error-dialog.component';
 
 import { CoursesService } from '../../services/courses.service';
-import { Course } from './../../../model/model';
+import { Course } from '../../../model/model';
 
 @Component({
-  selector: 'app-courses',
+  selector: 'list-courses',
   templateUrl: '../courses-list/courses-list.component.html',
   styleUrls: ['../courses-list/courses-list.component.scss'],
 })
 export class CoursesComponent {
   courses$: Observable<Course[]>;
-  // courses: Course[] = [];
-  displayedColumns = ['name', 'category', 'actions'];
-
-  // coursesService: CoursesService;
 
   constructor(
     private router: Router,
@@ -33,7 +29,7 @@ export class CoursesComponent {
   }
 
   onAdd() {
-    this.router.navigate(['courses/new'])
+    this.router.navigate(['courses/new']);
   }
 
   onError(errorMsg: string) {

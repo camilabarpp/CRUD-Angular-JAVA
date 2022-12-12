@@ -1,8 +1,8 @@
-<mat-card class="full-width min-width">
+<mat-card class="min-width full-width">
+  <mat-toolbar color="primary">
+    <span>Detalhes do curso</span>
+  </mat-toolbar>
   <mat-card-content>
-    <mat-toolbar color="primary">
-      <span>Detalhes do curso</span>
-    </mat-toolbar>
     <form [formGroup]="form">
       <mat-form-field>
         <mat-label>Nome</mat-label>
@@ -12,9 +12,9 @@
       <mat-form-field>
         <mat-label>Categoria</mat-label>
         <mat-select formControlName="category">
-          <mat-option value="null">Nenhuma</mat-option>
-          <mat-option value="front-end">Front-end</mat-option>
-          <mat-option value="back-end">Back-end</mat-option>
+          <mat-option value="Nenhuma">Nenhuma</mat-option>
+          <mat-option value="Front-end">Front-end</mat-option>
+          <mat-option value="Back-end">Back-end</mat-option>
         </mat-select>
       </mat-form-field>
     </form>

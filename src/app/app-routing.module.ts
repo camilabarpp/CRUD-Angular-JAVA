@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: 'courses',
     loadChildren: () =>
-      import('./courses/courses.module').then((m) => m.CoursesModule),
+      import('./containers/courses/courses.module').then((m) => m.CoursesModule),
   },
 ];
 

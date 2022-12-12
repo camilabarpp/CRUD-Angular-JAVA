@@ -1,4 +1,5 @@
-import { CoursesModule } from './courses/courses.module';
+import { RouterModule } from '@angular/router';
+import { CoursesModule } from './containers/courses/courses.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MaterialModule,
     CoursesModule,
+    RouterModule,
   ],
 })
 export class AppModule {}
